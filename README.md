@@ -38,3 +38,7 @@
 - linked.chat
 - www.talkus.io (39$)
 - chatlio.com (49$)
+- https://happyfoxchat.com/
+- https://improvi.github.io/slack-chat/
+- https://www.tawk.to/
+- https://keyreply.com/chat
