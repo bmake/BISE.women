@@ -19,7 +19,6 @@
 - Countdown für Studienstart / Start in die Zukunft (e.g. - http://itsalmo.st/#timeforyourfuture)
 - http://introbar.com/
 - https://www.typeform.com / https://www.tellform.com/
--
 
 
 ## Chat
