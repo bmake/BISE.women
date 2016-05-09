@@ -8,6 +8,17 @@
 ## Templates
 - https://github.com/designmodo/startup-demo/
 - https://mobirise.com/bootstrap-template/
+- http://bootstrap4.guide/
+- http://www.andreagalanti.it/lab/flatfy/
+- http://themeisle.com/themes/parallax-one/
+- http://tympanus.net/codrops/2015/07/10/freebie-cardio-one-page-website-template/
+- http://tympanus.net/codrops/2016/04/29/freebie-synthetica-one-page-website-template/
+- http://tympanus.net/codrops/2015/10/17/freebie-land-io-ui-kit-landing-page-template-html/
+- http://tympanus.net/codrops/2015/03/12/freebie-forkio-one-page-website-template/
+- http://tympanus.net/codrops/2015/08/11/freebie-sedna-one-page-website-template/
+- http://tympanus.net/codrops/2015/01/27/freebie-boxify-one-page-website-template/
+- http://tympanus.net/codrops/2014/07/14/freebie-halcyon-days-one-page-website-template/
+- http://tympanus.net/Freebies/Landio/ / https://github.com/tatygrassini/landio-html
 
 ## Inspiration
 - https://www.typeform.com
