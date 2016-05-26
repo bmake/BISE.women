@@ -1,3 +1,20 @@
+/* Basics */
+
+.nopadding{
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.center-row {
+    display:table;
+}
+.center {
+    display:table-cell;
+    vertical-align:middle;
+    float:none;
+}
+
 /* Smooch */
 
 
@@ -27,6 +44,12 @@
 }
 
 
+
+.bise  {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+}
 
 
 
@@ -144,4 +167,86 @@
     font-size: 12px;
     line-height: 1.428571429;
     border-radius: 15px;
+}
+
+
+
+.questions .contact-item .avatar img{
+
+    /*border-radius: 50%;*/
+    max-width: 160px;
+}
+
+
+#more .portfolio-item {
+    margin: 0 0 15px;
+    right: 0;
+}
+#more .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#more .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+#more .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+#more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: white;
+}
+#more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+#more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#more .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+#more .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+}
+#more .portfolio-item .portfolio-caption h4 {
+    text-transform: none;
+    margin: 0;
+}
+#more .portfolio-item .portfolio-caption p {
+    font-size: 16px;
+    margin: 0;
+}
+#more * {
+    z-index: 2;
+}
+@media (min-width: 767px) {
+    #more .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+#more .services-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 40px;
 }
