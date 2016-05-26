@@ -1025,11 +1025,12 @@ ul.dropdown-menu li a:hover {
 }
 
 .footer__copyright {
-    background: #34314c;
+    background: #000;
     color: #ccc;
     padding: 20px 0;
     font-size: 14px;
     line-height: 28px;
+    font-weight:500;
 }
 
 .footer__copyright p {
