@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e52ecbff-0b4c-48c1-b172-3b32a94177e4" name="wi.th-brandenburg.de" url="http://wi.th-brandenburg.de">
+        <fileTransfer host="webs1-rz.th-brandenburg.de" port="22" rootFolder="/websites/fbw-wi/htdocs" accessType="SFTP" password="dfd3df98dff9dfeedfdddf99dffedffedffedfcb" username="fbwwi">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
