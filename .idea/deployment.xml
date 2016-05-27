@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="wi.th-brandenburg.de" uploadOnCheckin="e52ecbff-0b4c-48c1-b172-3b32a94177e4">
+    <serverData>
+      <paths name="wi.th-brandenburg.de">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/htdocs" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="wi.th-brandenburg.de" />
+  </component>
+</project>
