@@ -77,11 +77,11 @@ function map() {
             });
 
             var contentString = '<div class="info-window">' +
-                    '<h3>Info Window Content</h3>' +
-                    '<div class="info-content">' +
-                    '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
-                    '</div>' +
-                    '</div>';
+                '<h3>Info Window Content</h3>' +
+                '<div class="info-content">' +
+                '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+                '</div>' +
+                '</div>';
 
             var infowindow = new google.maps.InfoWindow({
                 content: contentString,
@@ -115,14 +115,14 @@ function menuSliding() {
 
     $('.dropdown').on('show.bs.dropdown', function (e) {
 
-        if ($(window).width() > 750) {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+            if ($(window).width() > 750) {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
 
+            }
+            else {
+                $(this).find('.dropdown-menu').first().stop(true, true).show();
+            }
         }
-        else {
-            $(this).find('.dropdown-menu').first().stop(true, true).show();
-        }
-    }
 
     );
     $('.dropdown').on('hide.bs.dropdown', function (e) {
@@ -142,20 +142,20 @@ function animations() {
     delayTime = 0;
     $('[data-animate]').css({opacity: '0'});
     $('[data-animate]').waypoint(function (direction) {
-        delayTime += 150;
-        $(this).delay(delayTime).queue(function (next) {
-            $(this).toggleClass('animated');
-            $(this).toggleClass($(this).data('animate'));
-            delayTime = 0;
-            next();
-            //$(this).removeClass('animated');
-            //$(this).toggleClass($(this).data('animate'));
-        });
-    },
-            {
-                offset: '90%',
-                triggerOnce: true
+            delayTime += 150;
+            $(this).delay(delayTime).queue(function (next) {
+                $(this).toggleClass('animated');
+                $(this).toggleClass($(this).data('animate'));
+                delayTime = 0;
+                next();
+                //$(this).removeClass('animated');
+                //$(this).toggleClass($(this).data('animate'));
             });
+        },
+        {
+            offset: '90%',
+            triggerOnce: true
+        });
 
     $('[data-animate-hover]').hover(function () {
         $(this).css({opacity: 1});
@@ -253,11 +253,11 @@ function productDetailGallery(confDetailSwitch) {
     timer = setInterval(autoSwitch, confDetailSwitch);
     $(".thumb").click(function (e) {
 
-        switchImage($(this));
-        clearInterval(timer);
-        timer = setInterval(autoSwitch, confDetailSwitch);
-        e.preventDefault();
-    }
+            switchImage($(this));
+            clearInterval(timer);
+            timer = setInterval(autoSwitch, confDetailSwitch);
+            e.preventDefault();
+        }
     );
     $('#mainImage').hover(function () {
         clearInterval(timer);
