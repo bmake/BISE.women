@@ -1222,7 +1222,7 @@ STYLE SWITCHER FOR DEMO
 }
 
 .navbar-collapse {
-    max-height: 340px;
+    max-height: 380px !important;
     overflow-x: visible;
     padding-right: 15px;
     padding-left: 15px;
