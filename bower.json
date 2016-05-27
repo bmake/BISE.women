@@ -1,0 +1,23 @@
+{
+  "name": "BISE-Women-Landingpage",
+  "homepage": "https://github.com/bmake/BISE.women",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "components-font-awesome": "^4.6.3",
+    "jquery.scrollTo": "^2.1.2",
+    "owl.carousel": "^2.1.4",
+    "parallax.js": "^1.4.2",
+    "skrollr": "^0.6.30"
+  }
+}
