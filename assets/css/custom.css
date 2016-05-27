@@ -23,6 +23,15 @@
     h1.logo {
         font-size: 25px;
     }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h5{
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
 
 
@@ -66,19 +75,35 @@
 
 
 /* Small Devices, Tablets */
+
+@media only screen and (min-width : 300px) {
+
+
+
+    .bise-desc {
+        margin-top:20px;
+    }
+
+}
+
+
 @media only screen and (min-width : 768px) {
+
+
 
     blockquote.size-25 {
         font-size: 15px;
     }
 
     blockquote.size-45 {
+        margin-top:5px;
         font-size: 15px;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
 
     blockquote.size-25 {
         font-size: 20px;
