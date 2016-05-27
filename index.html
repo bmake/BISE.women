@@ -89,7 +89,7 @@
                         <li><a href="#questions" class="scroll-to">Fragen?</a></li>
                         <li><a href="#more" class="scroll-to">mehr</a></li>
                     </ul>
-                    <a href="https://meincampus.fh-brandenburg.de/qisserver/pages/psv/selbstregistrierung/pub/selbstregistrierung.xhtml?_flowId=selfRegistrationRegister-flow&_flowExecutionKey=e2s1" target="_blank" class="btn navbar-btn btn-ghost">Jetzt immatrikulieren</a>
+                    <a href="https://meincampus.fh-brandenburg.de/qisserver/pages/psv/selbstregistrierung/pub/selbstregistrierung.xhtml?_flowId=selfRegistrationRegister-flow&_flowExecutionKey=e2s1" target="_blank" onclick="javascript:_paq.push(['trackEvent', 'Menu', 'Immatrikulieren']);" class="btn navbar-btn btn-ghost">Jetzt immatrikulieren</a>
                 </div>
             </div>
         </div>
@@ -212,7 +212,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center" >
-                    <a type="button" class="btn btn-lg btn-primary" href="http://fbwcms.fh-brandenburg.de/sixcms/media.php/1085/WI_BA_Modulkatalog-Juli2014-v1.pdf" target="_blank"> Mehr Inhalte im Modulkatalog</a>
+                    <a type="button" class="btn btn-lg btn-primary" href="http://fbwcms.fh-brandenburg.de/sixcms/media.php/1085/WI_BA_Modulkatalog-Juli2014-v1.pdf" target="_blank" onclick="javascript:_paq.push(['trackEvent', 'BISE', 'Modulkatalog']);"> Mehr Inhalte im Modulkatalog</a>
                 </div>
             </div>
         </div>
@@ -410,8 +410,10 @@
                     <div class="process text-center">
                         <div class="process-row">
                             <div class="process-step">
-                                <button type="button" class="btn btn-default btn-circle step-btn" href="https://meincampus.fh-brandenburg.de"><i class="fa fa-sign-in fa-3x"></i></button>
-                                <p><a href="https://meincampus.fh-brandenburg.de/qisserver/pages/psv/selbstregistrierung/pub/selbstregistrierung.xhtml?_flowId=selfRegistrationRegister-flow&_flowExecutionKey=e2s1" target="_blank">Anmelden zur<br /> Online-Bewerbung</a></p>
+                                <a type="button" class="btn btn-default btn-circle step-btn" role="button" href="https://meincampus.fh-brandenburg.de/qisserver/pages/psv/selbstregistrierung/pub/selbstregistrierung.xhtml?_flowId=selfRegistrationRegister-flow&_flowExecutionKey=e2s1" target="_blank" onclick="javascript:_paq.push(['trackEvent', '4Steps', 'Immatrikulation']);">
+                                    <i class="fa fa-sign-in fa-3x" ></i>
+                                </a>
+                                <p><a href="https://meincampus.fh-brandenburg.de/qisserver/pages/psv/selbstregistrierung/pub/selbstregistrierung.xhtml?_flowId=selfRegistrationRegister-flow&_flowExecutionKey=e2s1" target="_blank" onclick="javascript:_paq.push(['trackEvent', 'Steps', 'Immatrikulation']);">Anmelden zur<br /> Online-Bewerbung</a></p>
                             </div>
                             <div class="process-step">
                                 <button type="button" class="btn btn-default btn-circle step-btn" disabled="disabled"><i class="fa fa-list  fa-3x"></i></button>
@@ -428,8 +430,8 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <a type="button" class="btn btn-primary" href="https://www.th-brandenburg.de/sts-bewerbung.html" target="_blank">Checkliste</a>
-                        <a type="button" class="btn btn-default" href="https://www.th-brandenburg.de/immatrikulation.html?&MP=2403-2645" target="_blank"> Mehr Informationen </a>
+                        <a type="button" class="btn btn-primary" href="https://www.th-brandenburg.de/sts-bewerbung.html" target="_blank" onclick="javascript:_paq.push(['trackEvent', '4Steps', 'Checkliste']);">Checkliste</a>
+                        <a type="button" class="btn btn-default" href="https://www.th-brandenburg.de/immatrikulation.html?&MP=2403-2645" target="_blank" onclick="javascript:_paq.push(['trackEvent', '4Steps', 'MoreInfo']);"> Mehr Informationen </a>
                     </div>
                 </div>
             </div>
@@ -448,14 +450,14 @@
                             <div class="contact-item">
                                 <div class="avatar"><img class="img-responsive img-circle" src="assets/images/people/meister.jpg" /></div>
                                 <h5 class="">Prof. Vera G. Meister</h5>
-                                <small><a href="mailto:vera.meister@th-brandenburg.de">meisterv@th-brandenburg.de</a></small>
+                                <small><a href="mailto:vera.meister@th-brandenburg.de" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Meister']);">meisterv@th-brandenburg.de</a></small>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="contact-item">
                                 <div class="avatar "><img class="img-responsive img-circle" src="assets/images/people/hoeding.png" /></div>
                                 <h5 class="">Prof. Michael Höding</h5>
-                                <small><a href="mailto:hoeding@th-brandenburg.de">hoeding@th-brandenburg.de</a></small>
+                                <small><a href="mailto:hoeding@th-brandenburg.de" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Hoeding']);">hoeding@th-brandenburg.de</a></small>
                             </div>
                         </div>
                     </div>
@@ -472,7 +474,7 @@
                                 <div class="contact-item">
                                     <div class="avatar"><img class="img-responsive img-circle" src="assets/images/people/rabinski.png" /></div>
                                     <h5 class="">Wladislaw Rabinski </h5>
-                                    <small><a href="mailto:rabinski@th-brandenburg.de">rabinski@th-brandenburg.de</a></small>
+                                    <small><a href="mailto:rabinski@th-brandenburg.de" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Rabinski']);">rabinski@th-brandenburg.de</a></small>
                                 </div>
                             </div>
 
@@ -480,7 +482,7 @@
                                 <div class="contact-item">
                                     <div class="avatar"><img class="img-responsive img-circle" src="assets/images/people/wenxin-min.png" /></div>
                                     <h5 class="">Wenxin Hu</h5>
-                                    <small><a href="mailto:hu@th-brandenburg.de">hu@th-brandenburg.de</a></small>
+                                    <small><a href="mailto:hu@th-brandenburg.de" onclick="javascript:_paq.push(['trackEvent', 'Contact', 'Hu']);">hu@th-brandenburg.de</a></small>
                                 </div>
                             </div>
 
@@ -499,13 +501,13 @@
             <div class="row">
                 <h4 class="services-heading text-center">Wirtschaftsinformatik zum anfassen</h4>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="http://univera.de/FHB/fbwTube/?id=KITP1&chapter=4" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <a href="http://univera.de/FHB/fbwTube/?id=KITP1&chapter=4" onclick="javascript:_paq.push(['trackEvent', 'MoreContent', 'Prozessmodellierung']);" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/action/VideoMeister.png" target="_blank"  class="img-responsive" alt="">
+                        <img src="assets/images/action/VideoMeister.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Prozessmodellierung</h4>
@@ -514,7 +516,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="downloads/DerSeltsameWaldERnachREL.pdf" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <a href="downloads/DerSeltsameWaldERnachREL.pdf" target="_blank" onclick="javascript:_paq.push(['trackEvent', 'MoreContent', 'Datenbanken']);"  class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -529,7 +531,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="downloads/activitydiagram/" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <a href="downloads/activitydiagram/" target="_blank" class="portfolio-link" onclick="javascript:_paq.push(['trackEvent', 'MoreContent', 'Software-Entwicklung']);"  data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -571,11 +573,7 @@
 
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/jquery.cookie.js"></script>
-<script src="js/ekko-lightbox.js"></script>
-<script src="js/jquery.simple-text-rotator.min.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script src="vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
 
 <script src="js/front.js"></script>
 
