@@ -33,305 +33,331 @@
 </HEAD>
 <BODY LANG="de-DE" DIR="LTR">
 <div class="container">
-<P ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<H1 CLASS="western"><FONT SIZE=4 STYLE="font-size: 16pt">UML-Aktivit&auml;tendiagramm
-(Activity Diagram)</FONT></H1>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif"><FONT COLOR="#000000"><FONT SIZE=3><B>Literatur:<BR></B></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">(Balzert
+
+
+
+	<P ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<H1 CLASS="western"><FONT SIZE=4 STYLE="font-size: 16pt">UML-Aktivit&auml;tendiagramm
+		(Activity Diagram)</FONT></H1>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3><B>Literaturempfehlung:<BR></B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">(Balzert
 1998-2001)<BR></SPAN></FONT></FONT></FONT><FONT FACE="Lucida Sans, sans-serif"><SPAN STYLE="font-weight: normal">(Rupp
 und Queins 2012)<BR>(Scheibl)<BR></SPAN></FONT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3><SPAN STYLE="font-weight: normal">(Erler
-2004)</SPAN></FONT></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=3><BR>(</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=3><B>Die
-nachfolgende Darstellung orientiert sich an (Rupp und Queins 2012)</B></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=3>)</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif"><FONT COLOR="#0000ff"><B>Aktivit&auml;tendiagramme</B></FONT>
-dienen der detaillierten <FONT COLOR="#ff00ff">Visualisierung von
-Daten- und Kontrollfl&uuml;ssen</FONT> innerhalb einer Aktivit&auml;t
-(z.B. Gesch&auml;ftsprozess). Dabei geht es um die Modellierung
-komplexer Abl&auml;ufe unter Ber&uuml;cksichtigung von
-Nebenl&auml;ufigkeit und alternativen Entscheidungswegen. Durch den
-w&auml;hlbaren Detaillierungsgrad stellen Aktivit&auml;tendiagramme
-eine Alternative zu PAPs oder Struktogrammen
-(Nassi-Shneiderman-Diagramme) dar.</FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Die
-wichtigsten Elemente von Aktivit&auml;tendiagramme sind</FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Aktivit&auml;ten
-(k&ouml;nnen geschachtelt werden)<BR>Aktionen<BR>Objektknoten<BR>Elemente
-zur Steuerung des Kontrollflusses<BR>Kanten zum Verbinden der
-Elemente und Visualisierung des Kontrollflusses</FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Im
-Folgenden werden die Aktivit&auml;tendiagramme anhand von Beispielen
-erl&auml;utert.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff"><FONT SIZE=4><B>Aktion:</B></FONT></FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif"><FONT COLOR="#000000"><FONT SIZE=3>Unter
-einer Aktion wird ein elementarer Vorgang bzw. Einzelschritt
-verstanden der nicht weiter zerlegt werden kann bzw. auf dem
-gew&auml;hlten Abstraktionsniveau nicht weiter zerlegt werden soll.
-Eine Aktion wird durch ein oder mehrere Ereignis(se) ausgel&ouml;st
-und beendet sich selbst (Repr&auml;sentation eines bestimmtes
-Verhalten in einem System). Eine Folge von Aktionen, welche zu einem
-bestimmten Ergebnis f&uuml;hren, werden mit dem Begriff </FONT></FONT><FONT COLOR="#0000ff"><FONT SIZE=3><B>Aktivit&auml;t</B></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=3>
-zusammengefasst. </FONT></FONT></FONT>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m615c6e58.png" NAME="Grafik12" ALIGN=LEFT WIDTH=301 HEIGHT=344 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m6c21c8fb.png" NAME="Grafik13" ALIGN=LEFT WIDTH=343 HEIGHT=323 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Objektknoten:</B></FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Objektknoten
-dienen der Modellierung von Daten und Werten die beim Ablauf einer
-Aktivit&auml;t transportiert werden. Bei der Umsetzung eines Modells
-mittels einer Programmiersprache sind die Objektknoten Stellvertreter
-von Variablen, Konstanten und Objekten von Klassen.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_3e2375e0.png" NAME="Grafik14" ALIGN=LEFT WIDTH=492 HEIGHT=192 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_22c1c072.png" NAME="Grafik15" ALIGN=LEFT WIDTH=341 HEIGHT=90 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Als
-alternative Darstellung, bei dem die Objektknoten als Eingabe bzw.
-Ausgabeparameter einer Aktion hervorgehoben wird, kann die
-Pin-Notation verwendet werden:</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_73d9a9bf.png" NAME="Grafik16" ALIGN=LEFT WIDTH=239 HEIGHT=86 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_1d9e63d7.png" NAME="Grafik17" ALIGN=LEFT WIDTH=283 HEIGHT=75 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Wenn
-der Objektfluss fortw&auml;hrend in oder aus einer Aktion flie&szlig;t
-(auch wenn die Aktion gerade aktiv ist), dann handelt es sich bei dem
-Objektfluss um einen Datenstrom. Dies kann durch ein schwarzes
-K&auml;stchen als Pin oder ein ausgef&uuml;lltes Pfeilende
-symbolisiert werden. Alternativ kann man die ein/ausgehenden Kanten
-mit dem Vermerk &bdquo;{stream}&ldquo; versehen. Bei einem
-Eingabestrom wird mit der Abarbeitung einer Aktion begonnen, sobald
-die ersten Daten an der Aktion angekommen sind. Es wird also nicht
-gewartet, bis alle Eingabeparameter eingegangen sind.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_f57634.png" NAME="Grafik18" ALIGN=LEFT WIDTH=434 HEIGHT=71 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>&Uuml;blicherweise
-nimmt ein Objektknoten genau ein Token auf, welches dann sofort an
-die nachfolgende Aktion weitergereicht wird &ndash; es sei denn die
-nachfolgende Aktion ist gerade aktiv. In diesem Fall staut sich das
-Token im Datenknoten und der Datenknoten kann kein weiteres Token
-aufnehmen, bis die nachfolgende Aktion abgeschlossen ist. In der UML
-kann die Anzahl der Token, die ein Objektknoten aufnehmen kann bevor
-sich ein &bdquo;R&uuml;ckw&auml;rtsstau&ldquo; einstellt, angegeben
-werden. Im folgenden Beispiel (in Anlehnung an (Rupp und Queins
-2012)) k&ouml;nnen bis zu 3 Cocktailgl&auml;ser gemixt werden falls
-die Aktion &bdquo;Cocktail trinken&ldquo; aktiv ist. Nach dem 3.
-Cocktail kann aber kein Cocktail mehr gemixt werden, es sei denn es
-wird wieder ein Cocktail zum trinken entnommen (Verhinderung dass die
-Cocktails zu warm werden).</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m1ca969a4.png" NAME="Grafik23" ALIGN=LEFT WIDTH=528 HEIGHT=306 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>M&ouml;chte
-man die obig beschriebene Pufferfunktion des Objektknotens besonders
-betonen, so verwendet man Objektknoten die mit dem Stereotyp
-&bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;centralBuffer&gt;&gt;</FONT></FONT>&ldquo;
-(oder einem speziellen Symbol) gekennzeichnet sind.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_79f2e4ee.png" NAME="Grafik20" ALIGN=LEFT WIDTH=612 HEIGHT=205 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>M&ouml;chte
-man einen Objektknotens als Datenspeicher verwenden der alle
-eingehende Token und deren mitgef&uuml;hrte Daten persistent
-speichert, sodass die Token (und deren Daten) jederzeit beliebig oft
-ausgelesen werden k&ouml;nnen, so verwendet man Objektknoten die mit
-dem Stereotyp &bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;datastore&gt;&gt;</FONT></FONT>&ldquo;
-(oder einem speziellen Symbol) gekennzeichnet sind. Wenn Token in den
-Datenspeicher einflie&szlig;en, die schon im Datenspeicher vorhanden
-sind, so werden die Daten des Tokens aktualisiert.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_331c6e4d.png" NAME="Grafik22" ALIGN=LEFT WIDTH=563 HEIGHT=185 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel:</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m53e3ffef.png" NAME="Grafik19" ALIGN=LEFT WIDTH=563 HEIGHT=453 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Gewichtete Kanten:</B></FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>&Uuml;ber
-gewichteten Kanten kann festgelegt werden, wieviele Token am Ursprung
-einer Kante angesammelt sein m&uuml;ssen, damit der Ablauf &uuml;ber
-die Kante geht (Defaultwert=1).</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m7a4e936d.png" NAME="Grafik24" ALIGN=LEFT WIDTH=441 HEIGHT=212 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Multicast/Multireceive:</B></FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Mit
-dem Schl&uuml;sselwort &bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;multicast&gt;&gt;</FONT></FONT>&ldquo;
-kann ein Objektknoten mehrere Objektinstanzen &uuml;ber eine
-ausgehende Kante verbreiten. Mit dem Schl&uuml;sselwort
-&bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;multireceive&gt;&gt;</FONT></FONT>&ldquo;
-kann ein Objektknoten mehrere Objektinstanzen &uuml;ber eine
-eingehende Kante entgegennehmen.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_61d57aee.png" NAME="Grafik25" ALIGN=LEFT WIDTH=478 HEIGHT=146 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Sprungmarken:</B></FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Aktivit&auml;tendiagramme
-werden mit zunehmender Anzahl von Aktionen immer un&uuml;bersichtlicher.
-Sprungmarken erm&ouml;glichen die Unterbrechung eines Ablaufes und
-Weiterf&uuml;hrung an einer anderen Stelle:</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m236db030.png" NAME="Grafik5" ALIGN=LEFT WIDTH=421 HEIGHT=189 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Kontrollelemente:</B></FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_5e0db9d1.png" NAME="Grafik26" ALIGN=LEFT WIDTH=407 HEIGHT=686 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Im
-&bdquo;Verbindungsknoten&ldquo; (merge=Raute) findet keine
-Synchronisation statt (sobald ein Token anliegt, wird dieser an den
-nachfolgenden Knoten weitergereicht). Falls mehrere Token
-gleichzeitig anliegen (ist im obigen Beispiel nicht m&ouml;glich),
-werden diese in nicht spezifizierter Reihenfolge serialisiert. Im
-Gegensatz dazu sendet der &bdquo;Synchronisationsknoten&ldquo; (join)
-erst dann ein Token, wenn an allen Eing&auml;ngen ein Token anliegt.
-In unserem Fall bedeutet dies, dass erst dann die Ware verpackt und
-versendet wird, wenn die Aktion &bdquo;Kreditkarte belasten&ldquo;
-<B>und</B> &bdquo;Rechnung drucken&ldquo; abgeschlossen ist.
-Allerdings kann diese &bdquo;join condition&ldquo; auch ge&auml;ndert
-werden:</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m44403136.png" NAME="Grafik27" ALIGN=LEFT WIDTH=313 HEIGHT=166 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff">Endknoten:</FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_3ddb5def.png" NAME="Grafik29" ALIGN=LEFT WIDTH=204 HEIGHT=211 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Aktivit&auml;tendiagramme
-k&ouml;nnen auch nebenl&auml;ufige Aktionen beinhalten (im obigen
-Beispiel war dies &bdquo;Rechnung drucken&ldquo; und &bdquo;Kreditkarte
-belasten&ldquo;). Solche nebenl&auml;ufige Aktionen k&ouml;nnen
-unabh&auml;ngig von der gesamten Aktivit&auml;t terminieren. In
-diesem Fall wird das Symbol eines Endeknotens f&uuml;r Kontrollfl&uuml;sse
-verwendet.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel:</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m2141ba45.png" NAME="Grafik28" ALIGN=LEFT WIDTH=493 HEIGHT=413 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff">Signale und Ereignisse:</FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Aktionen
-die ein Signal senden bzw. empfangen werden als <FONT COLOR="#0000ff">SendSignalAction</FONT>
-und <FONT COLOR="#0000ff">AcceptSignalAction</FONT> bezeichnet. Diese
-speziellen Aktionen haben eigene Symbole. Beispiel zur Illustration
-(aus (Rupp und Queins 2012)):</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m3d5b6ae8.png" NAME="Grafik30" ALIGN=LEFT WIDTH=412 HEIGHT=458 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Bisher
-wurden die F&auml;lle betrachtet in denen eine Aktion durch eine
-andere Aktion oder durch das Empfangen eines Signales ausgel&ouml;st
-wurde. Eine Aktion kann aber auch durch ein Zeitereignis ausgel&ouml;st
-werden:</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_eed864a.png" NAME="Grafik1" ALIGN=LEFT WIDTH=383 HEIGHT=413 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff">Unterbrechungsbereich und
-Exception-Handler:</FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel:</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_68d56c51.png" NAME="Grafik32" ALIGN=LEFT WIDTH=542 HEIGHT=408 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff">Aktivit&auml;tsbereiche:</FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Mittels
-Partitionen (swimm lanes) k&ouml;nnen Aktivit&auml;tendiagramme in
-Aktivit&auml;tsbereiche strukturiert werden (Organisationseinheiten,
-Kostenstellen, Orte, Rollen, ...):</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_8cef14b.png" NAME="Grafik33" ALIGN=LEFT WIDTH=373 HEIGHT=306 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m70bb0114.png" NAME="Grafik34" ALIGN=LEFT WIDTH=309 HEIGHT=320 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff">Strukturierter Knoten:</FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Strukturierte
-Knoten dienen der Gruppierung von Modellelementen. Entweder um diese
-zu strukturieren oder um zu visualisieren, dass die gruppierten
-Modellelemente nach au&szlig;en als eine Aktion aufgefasst werden
-k&ouml;nnen.</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m480c6ef5.png" NAME="Grafik35" ALIGN=LEFT WIDTH=217 HEIGHT=337 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Mit
-einem strukturierten Knoten kann auch modelliert werden, dass ein
-gruppierter Bereich erst vollst&auml;ndig abgearbeitet sein muss,
-bevor anliegende Token diesen betreten d&uuml;rfen (Schl&uuml;sselwort
-synchronized in Java):</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m19ee4ace.png" NAME="Grafik36" ALIGN=LEFT WIDTH=371 HEIGHT=407 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff">Schleifenknoten:</FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Bei
-einem Schleifenknoten handelt es sich um einen strukturierten Knoten
-mit maximal drei Unterbereichen: einem Initialisierungsbereich (setup
-section bzw. for section), einem Testbereich (while section) und
-einem Ausf&uuml;hrungsbereich (do section).</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_m3af06ea9.png" NAME="Grafik37" ALIGN=LEFT WIDTH=260 HEIGHT=194 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel
-in Anlehnung an (Rupp und Queins 2012):</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_3bd6734e.png" NAME="Grafik39" ALIGN=LEFT WIDTH=341 HEIGHT=547 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<H2 CLASS="western"><FONT COLOR="#0000ff">Entscheidungsknoten:</FONT></H2>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Bei
-komplexen, verschachtelten Entscheidungen wird die Darstellung des
-Informationsflusses mittels dem Raute-Symbol (Verzweigungsknoten)
-schnell un&uuml;bersichtlich. Aus diesem Grund gibt es f&uuml;r
-verschachtelte Verzweigungen eine alternative Darstellung mittels
-einem Entscheidungsknoten (conditional node).</FONT></FONT></FONT></P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG class="img-responsive" SRC="ActivityDiagram_html_4cbc4b11.png" NAME="Grafik38" ALIGN=LEFT WIDTH=266 HEIGHT=453 BORDER=0><BR CLEAR=LEFT><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
-</P>
-	</div>
+2004)</SPAN></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3><BR>(</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3><B>Die
+		nachfolgende Darstellung orientiert sich an </B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3><B>(Rupp
+		und Queins 2012)</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>)</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif"><FONT COLOR="#0000ff"><B>Aktivit&auml;tendiagramme</B></FONT>
+		dienen der detaillierten <FONT COLOR="#ff00ff">Visualisierung von
+			Daten- und Kontrollfl&uuml;ssen</FONT> innerhalb einer Aktivit&auml;t
+		(z.B. Gesch&auml;ftsprozess). Dabei geht es um die Modellierung
+		komplexer Abl&auml;ufe unter Ber&uuml;cksichtigung von
+		Nebenl&auml;ufigkeit und alternativen Entscheidungswegen. Durch den
+		w&auml;hlbaren Detaillierungsgrad stellen Aktivit&auml;tendiagramme
+		eine Alternative zu PAPs oder Struktogrammen
+		(Nassi-Shneiderman-Diagramme) dar.</FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Die
+		wichtigsten Elemente von Aktivit&auml;tendiagramme sind</FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Aktivit&auml;ten
+		(k&ouml;nnen geschachtelt werden)<BR>Aktionen<BR>Objektknoten<BR>Elemente
+		zur Steuerung des Kontrollflusses<BR>Kanten zum Verbinden der
+		Elemente und Visualisierung des Kontrollflusses</FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Im
+		Folgenden werden die Aktivit&auml;tendiagramme anhand von Beispielen
+		erl&auml;utert.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff"><FONT SIZE=4><B>Aktion:</B></FONT></FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif"><FONT COLOR="#000000"><FONT SIZE=3>Unter
+		einer Aktion wird ein elementarer Vorgang bzw. Einzelschritt
+		verstanden der nicht weiter zerlegt werden kann bzw. auf dem
+		gew&auml;hlten Abstraktionsniveau nicht weiter zerlegt werden soll.
+		Eine Aktion wird durch ein oder mehrere Ereignis(se) ausgel&ouml;st
+		und beendet sich selbst (Repr&auml;sentation eines bestimmtes
+		Verhalten in einem System). Eine Folge von Aktionen, welche zu einem
+		bestimmten Ergebnis f&uuml;hren, werden mit dem Begriff </FONT></FONT><FONT COLOR="#0000ff"><FONT SIZE=3><B>Aktivit&auml;t</B></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=3>
+		zusammengefasst. </FONT></FONT></FONT>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m615c6e58.png" NAME="Grafik12" ALIGN=LEFT WIDTH=301 HEIGHT=344 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m6c21c8fb.png" NAME="Grafik13" ALIGN=LEFT WIDTH=343 HEIGHT=323 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Objektknoten:</B></FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Objektknoten
+		dienen der Modellierung von Daten und Werten die beim Ablauf einer
+		Aktivit&auml;t transportiert werden. Bei der Umsetzung eines Modells
+		mittels einer Programmiersprache sind die Objektknoten Stellvertreter
+		von Variablen, Konstanten und Objekten von Klassen.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_3e2375e0.png" NAME="Grafik14" ALIGN=LEFT WIDTH=492 HEIGHT=192 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_22c1c072.png" NAME="Grafik15" ALIGN=LEFT WIDTH=341 HEIGHT=90 BORDER=0><BR CLEAR=LEFT><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Als
+		alternative Darstellung, bei dem die Objektknoten als Eingabe bzw.
+		Ausgabeparameter einer Aktion hervorgehoben wird, kann die
+		Pin-Notation verwendet werden:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_73d9a9bf.png" NAME="Grafik16" ALIGN=LEFT WIDTH=239 HEIGHT=86 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_1d9e63d7.png" NAME="Grafik17" ALIGN=LEFT WIDTH=283 HEIGHT=75 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Wenn
+		der Objektfluss fortw&auml;hrend in oder aus einer Aktion flie&szlig;t
+		(auch wenn die Aktion gerade aktiv ist), dann handelt es sich bei dem
+		Objektfluss um einen Datenstrom. Dies kann durch ein schwarzes
+		K&auml;stchen als Pin oder ein ausgef&uuml;lltes Pfeilende
+		symbolisiert werden. Alternativ kann man die ein/ausgehenden Kanten
+		mit dem Vermerk &bdquo;{stream}&ldquo; versehen. Bei einem
+		Eingabestrom wird mit der Abarbeitung einer Aktion begonnen, sobald
+		die ersten Daten an der Aktion angekommen sind. Es wird also nicht
+		gewartet, bis alle Eingabeparameter eingegangen sind.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_f57634.png" NAME="Grafik18" ALIGN=LEFT WIDTH=434 HEIGHT=71 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>&Uuml;blicherweise
+		nimmt ein Objektknoten genau ein Token auf, welches dann sofort an
+		die nachfolgende Aktion weitergereicht wird &ndash; es sei denn die
+		nachfolgende Aktion ist gerade aktiv. In diesem Fall staut sich das
+		Token im Datenknoten und der Datenknoten kann kein weiteres Token
+		aufnehmen, bis die nachfolgende Aktion abgeschlossen ist. In der UML
+		kann die Anzahl der Token, die ein Objektknoten aufnehmen kann bevor
+		sich ein &bdquo;R&uuml;ckw&auml;rtsstau&ldquo; einstellt, angegeben
+		werden. Im folgenden Beispiel (in Anlehnung an <FONT FACE="Lucida Sans, sans-serif"><SPAN STYLE="font-weight: normal">(Rupp
+und Queins 2012)</SPAN></FONT>) k&ouml;nnen bis zu 3 Cocktailgl&auml;ser
+		gemixt werden falls die Aktion &bdquo;Cocktail trinken&ldquo; aktiv
+		ist. Nach dem 3. Cocktail kann aber kein Cocktail mehr gemixt werden,
+		es sei denn es wird wieder ein Cocktail zum Trinken entnommen
+		(Verhinderung dass die Cocktails zu warm werden).</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m1ca969a4.png" NAME="Grafik23" ALIGN=LEFT WIDTH=528 HEIGHT=306 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>M&ouml;chte
+		man die obig beschriebene Pufferfunktion des Objektknotens besonders
+		betonen, so verwendet man Objektknoten die mit dem Stereotyp
+		&bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;centralBuffer&gt;&gt;</FONT></FONT>&ldquo;
+		(oder einem speziellen Symbol) gekennzeichnet sind.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_79f2e4ee.png" NAME="Grafik20" ALIGN=LEFT WIDTH=612 HEIGHT=205 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>M&ouml;chte
+		man einen Objektknotens als Datenspeicher verwenden der alle
+		eingehende Token und deren mitgef&uuml;hrte Daten persistent
+		speichert, sodass die Token (und deren Daten) jederzeit beliebig oft
+		ausgelesen werden k&ouml;nnen, so verwendet man Objektknoten die mit
+		dem Stereotyp &bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;datastore&gt;&gt;</FONT></FONT>&ldquo;
+		(oder einem speziellen Symbol) gekennzeichnet sind. Wenn Token in den
+		Datenspeicher einflie&szlig;en, die schon im Datenspeicher vorhanden
+		sind, so werden die Daten des Tokens aktualisiert.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_331c6e4d.png" NAME="Grafik22" ALIGN=LEFT WIDTH=563 HEIGHT=185 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m53e3ffef.png" NAME="Grafik19" ALIGN=LEFT WIDTH=563 HEIGHT=453 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Gewichtete Kanten:</B></FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>&Uuml;ber
+		gewichteten Kanten kann festgelegt werden, wieviele Token am Ursprung
+		einer Kante angesammelt sein m&uuml;ssen, damit der Ablauf &uuml;ber
+		die Kante geht (Defaultwert=1).</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m7a4e936d.png" NAME="Grafik24" ALIGN=LEFT WIDTH=441 HEIGHT=212 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Multicast/Multireceive:</B></FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Mit
+		dem Schl&uuml;sselwort &bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;multicast&gt;&gt;</FONT></FONT>&ldquo;
+		kann ein Objektknoten <B>mehrere</B> Objektinstanzen &uuml;ber <B>eine</B>
+		ausgehende Kante verbreiten. Mit dem Schl&uuml;sselwort
+		&bdquo;<FONT FACE="Courier New, monospace"><FONT SIZE=3 STYLE="font-size: 13pt">&lt;&lt;multireceive&gt;&gt;</FONT></FONT>&ldquo;
+		kann ein Objektknoten <B>mehrere</B> Objektinstanzen &uuml;ber <B>eine</B>
+		eingehende Kante entgegennehmen.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_261b9f15.png" NAME="Grafik2" ALIGN=LEFT WIDTH=428 HEIGHT=188 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Sprungmarken:</B></FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Aktivit&auml;tendiagramme
+		werden mit zunehmender Anzahl von Aktionen immer un&uuml;bersichtlicher.
+		Sprungmarken erm&ouml;glichen die Unterbrechung eines Ablaufes und
+		Weiterf&uuml;hrung an einer anderen Stelle:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m236db030.png" NAME="Grafik5" ALIGN=LEFT WIDTH=421 HEIGHT=189 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff"><B>Kontrollelemente:</B></FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_5e0db9d1.png" NAME="Grafik26" ALIGN=LEFT WIDTH=407 HEIGHT=686 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Im
+		&bdquo;Verbindungsknoten&ldquo; (merge=Raute) findet keine
+		Synchronisation statt (sobald ein Token anliegt, wird dieser an den
+		nachfolgenden Knoten weitergereicht). Falls mehrere Token
+		gleichzeitig anliegen (ist im obigen Beispiel nicht m&ouml;glich),
+		werden diese in nicht spezifizierter Reihenfolge serialisiert. Im
+		Gegensatz dazu sendet der &bdquo;Synchronisationsknoten&ldquo; (join)
+		erst dann ein Token, wenn an allen Eing&auml;ngen ein Token anliegt.
+		In unserem Fall bedeutet dies, dass erst dann die Ware verpackt und
+		versendet wird, wenn die Aktion &bdquo;Kreditkarte belasten&ldquo;
+		<B>und</B> &bdquo;Rechnung drucken&ldquo; abgeschlossen ist.
+		Allerdings kann diese &bdquo;join condition&ldquo; auch ge&auml;ndert
+		werden:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m44403136.png" NAME="Grafik27" ALIGN=LEFT WIDTH=313 HEIGHT=166 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff">Endknoten:</FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_3ddb5def.png" NAME="Grafik29" ALIGN=LEFT WIDTH=204 HEIGHT=211 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Aktivit&auml;tendiagramme
+		k&ouml;nnen auch nebenl&auml;ufige Aktionen beinhalten (im obigen
+		Beispiel war dies &bdquo;Rechnung drucken&ldquo; und &bdquo;Kreditkarte
+		belasten&ldquo;). Solche nebenl&auml;ufige Aktionen k&ouml;nnen
+		unabh&auml;ngig von der gesamten Aktivit&auml;t terminieren. In
+		diesem Fall wird das Symbol eines Endeknotens f&uuml;r Kontrollfl&uuml;sse
+		verwendet.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m2141ba45.png" NAME="Grafik28" ALIGN=LEFT WIDTH=493 HEIGHT=413 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff">Signale und Ereignisse:</FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Aktionen
+		die ein Signal senden bzw. empfangen werden als <FONT COLOR="#0000ff">SendSignalAction</FONT>
+		und <FONT COLOR="#0000ff">AcceptSignalAction</FONT> bezeichnet. Diese
+		speziellen Aktionen haben eigene Symbole. Beispiel zur Illustration
+		(aus <FONT FACE="Lucida Sans, sans-serif"><SPAN STYLE="font-weight: normal">(Rupp
+und Queins 2012)</SPAN></FONT>):</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m3d5b6ae8.png" NAME="Grafik30" ALIGN=LEFT WIDTH=412 HEIGHT=458 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Bisher
+		wurden die F&auml;lle betrachtet in denen eine Aktion durch eine
+		andere Aktion oder durch das Empfangen eines Signales ausgel&ouml;st
+		wurde. Eine Aktion kann aber auch durch ein Zeitereignis ausgel&ouml;st
+		werden:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_eed864a.png" NAME="Grafik1" ALIGN=LEFT WIDTH=383 HEIGHT=413 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff">Unterbrechungsbereich und
+		Exception-Handler:</FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_68d56c51.png" NAME="Grafik32" ALIGN=LEFT WIDTH=542 HEIGHT=408 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff">Aktivit&auml;tsbereiche:</FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Mittels
+		Partitionen (swimm lanes) k&ouml;nnen Aktivit&auml;tendiagramme in
+		Aktivit&auml;tsbereiche strukturiert werden (Organisationseinheiten,
+		Kostenstellen, Orte, Rollen, ...):</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_8cef14b.png" NAME="Grafik33" ALIGN=LEFT WIDTH=373 HEIGHT=306 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m70bb0114.png" NAME="Grafik34" ALIGN=LEFT WIDTH=309 HEIGHT=320 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff">Strukturierter Knoten:</FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Strukturierte
+		Knoten dienen der Gruppierung von Modellelementen. Entweder um diese
+		zu strukturieren oder um zu visualisieren, dass die gruppierten
+		Modellelemente nach au&szlig;en als eine Aktion aufgefasst werden
+		k&ouml;nnen.</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m480c6ef5.png" NAME="Grafik35" ALIGN=LEFT WIDTH=217 HEIGHT=337 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Mit
+		einem strukturierten Knoten kann auch modelliert werden, dass ein
+		gruppierter Bereich erst vollst&auml;ndig abgearbeitet sein muss,
+		bevor anliegende Token diesen betreten d&uuml;rfen (Schl&uuml;sselwort
+		synchronized in Java):</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m19ee4ace.png" NAME="Grafik36" ALIGN=LEFT WIDTH=371 HEIGHT=407 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff">Schleifenknoten:</FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Bei
+		einem Schleifenknoten handelt es sich um einen strukturierten Knoten
+		mit maximal drei Unterbereichen: einem Initialisierungsbereich (setup
+		section bzw. for section), einem Testbereich (while section) und
+		einem Ausf&uuml;hrungsbereich (do section).</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_m3af06ea9.png" NAME="Grafik37" ALIGN=LEFT WIDTH=260 HEIGHT=194 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Beispiel
+		in Anlehnung an <FONT FACE="Lucida Sans, sans-serif"><SPAN STYLE="font-weight: normal">(Rupp
+und Queins 2012)</SPAN></FONT>:</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_3bd6734e.png" NAME="Grafik39" ALIGN=LEFT WIDTH=341 HEIGHT=547 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<H2 CLASS="western"><FONT COLOR="#0000ff">Entscheidungsknoten:</FONT></H2>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT COLOR="#000000"><FONT FACE="Lucida Sans, sans-serif"><FONT SIZE=3>Bei
+		komplexen, verschachtelten Entscheidungen wird die Darstellung des
+		Informationsflusses mittels dem Raute-Symbol (Verzweigungsknoten)
+		schnell un&uuml;bersichtlich. Aus diesem Grund gibt es f&uuml;r
+		verschachtelte Verzweigungen eine alternative Darstellung mittels
+		einem Entscheidungsknoten (conditional node).</FONT></FONT></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><IMG SRC="ActivityDiagram_html_4cbc4b11.png" NAME="Grafik38" ALIGN=LEFT WIDTH=266 HEIGHT=453 BORDER=0><BR CLEAR=LEFT><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif"><B>Literatur</B></FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Balzert,
+		Helmut (1998-2001): Lehrbuch der Software-Technik.
+		Softwareentwicklung. Heidelberg: Spektrum Akademischer Verlag.</FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Erler,
+		Thomas (2004): Das Einsteigerseminar UML 2 ; [der methodische und
+		ausf&uuml;hrliche Einstieg ; 350 Seiten Einsteiger-Know-how]. 1.
+		Aufl. Bonn: Bhv (Das @Einsteigerseminar).</FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Rupp,
+		Chris; Queins, Stefan (2012): UML 2 glasklar. Praxiswissen f&uuml;r
+		die UML-Modellierung. 4., aktualisierte und erw. Aufl. M&uuml;nchen:
+		Hanser.</FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><FONT FACE="Lucida Sans, sans-serif">Scheibl,
+		Hans-J&uuml;rgen (o.J.): Einf&uuml;hrung in die Unified Modeling
+		Language (UML). Prof. Scheibls Hausseite, Bereich UML. Online
+		verf&uuml;gbar unter
+		http://home.f1.htw-berlin.de/scheibl/uml/index.htm, zuletzt gepr&uuml;ft
+		am 20.11.2014.</FONT></P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+	<P STYLE="margin-bottom: 0cm; line-height: 150%"><BR>
+	</P>
+
+
+</div>
 </BODY>
 </HTML>
