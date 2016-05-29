@@ -81,18 +81,27 @@
 /* Small Devices, Tablets */
 
 @media only screen and (min-width : 300px) {
-
-
     .bise-desc {
-        margin-top:20px;
+        margin-top:10px;
+    }
+
+    .bise-desc small{
+        display:block;
+        padding-left: 30px;
+    }
+
+    .bise blockquote {
+        margin: 0 0 0;
+    }
+
+    .bise-desc{
+        margin-bottom:20px;
     }
 
 }
 
 
 @media only screen and (min-width : 768px) {
-
-
 
     blockquote.size-25 {
         font-size: 15px;
@@ -102,6 +111,7 @@
         margin-top:5px;
         font-size: 15px;
     }
+
 }
 
 /* Medium Devices, Desktops */
@@ -318,6 +328,14 @@ a.step-btn i.fa {
     /*border-radius: 50%;*/
     max-width: 160px;
 }
+
+.contact-item .contact__description{
+
+    margin-bottom:20px;
+
+}
+
+
 
 
 #more .portfolio-item {
