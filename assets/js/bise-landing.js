@@ -5,3 +5,7 @@ $('.carousel').carousel({
 $( "#call-to-action-question" ).click(function() {
     $( "sk-wrapper" ).trigger( "click" );
 });
+
+$("img.lazy").lazyload({
+
+});
