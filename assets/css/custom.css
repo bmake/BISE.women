@@ -106,33 +106,27 @@
     blockquote.size-25 {
         font-size: 15px;
     }
-
     blockquote.size-45 {
         margin-top:5px;
         font-size: 15px;
     }
-
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
-
     blockquote.size-25 {
-        font-size: 20px;
+        font-size: 15px;
     }
-
     blockquote.size-45 {
         font-size: 25px;
     }
-
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
     blockquote.size-25 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     blockquote.size-45 {
@@ -141,18 +135,17 @@
 
 }
 
-@media only screen and (min-width : 1500px) {
+@media only screen and (min-width : 1400px) {
+
+    blockquote.size-25 {
+        font-size: 25px;
+    }
 
     blockquote.size-45 {
         font-size: 45px;
     }
 
 }
-
-
-
-
-
 
 
 .wi-testimonials {
