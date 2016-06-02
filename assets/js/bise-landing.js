@@ -1,6 +1,10 @@
-
-
 $(function() {
+
+
+    $("img.lazy").lazyload({
+        effect : "fadeIn",
+        threshold : 200
+    });
 
     $('.carousel').carousel({
         interval: 0
@@ -8,11 +12,6 @@ $(function() {
 
     $( "#call-to-action-question" ).click(function() {
         $( "sk-wrapper" ).trigger( "click" );
-    });
-
-    $("img.lazy").lazyload({
-        effect : "fadeIn",
-        threshold : 200
     });
 
 });
