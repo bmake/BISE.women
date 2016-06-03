@@ -35,4 +35,20 @@ $(function() {
     $('.carousel-indicators li').click(function () {
         _paq.push(['trackEvent', 'Click', 'Statements', $(this).children().attr('alt')]);
     });
+
+
+    /* Smooch tracking */
+
+    Smooch.on('widget:opened', function() {
+        _paq.push(['trackEvent', 'Click', 'Contact', 'Chat open']);
+
+    });
+
+    Smooch.on('message:sent', function(message) {
+        _paq.push(['trackEvent', 'Chat', 'Message', 'User sent: ' + message.text]);
+    });
+
+    Smooch.on('message:received', function(message) {
+        _paq.push(['trackEvent', 'Chat', 'Message', 'User received: ' + message.text]);
+    });
 });
