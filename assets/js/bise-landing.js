@@ -45,6 +45,10 @@ $(function() {
     });
 
     Smooch.on('message:sent', function(message) {
-        _paq.push(['trackEvent', 'Chat', 'Message', message.text]);
+        _paq.push(['trackEvent', 'Chat', 'Message', 'User sent: ' + message.text]);
+    });
+
+    Smooch.on('message:received', function(message) {
+        _paq.push(['trackEvent', 'Chat', 'Message', 'User received: ' + message.text]);
     });
 });
