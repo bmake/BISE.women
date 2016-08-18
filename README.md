@@ -1,2 +1,2 @@
 # BISE.women
-http://wi.th-brandenburg.de
+Landingpage http://wi.th-brandenburg.de
